@@ -1,0 +1,11 @@
+project: savantenvs/redex
+target: proguard_map
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_proguard_map
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/proguard_map/testsuite

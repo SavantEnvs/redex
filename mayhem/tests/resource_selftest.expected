@@ -1,0 +1,5 @@
+example_resources.arsc: ok=1 packages=1 type_specs=2 types=2 entries=3 maps=0
+resources_unknown_chunk.arsc: ok=1 packages=1 type_specs=10 types=13 entries=51 maps=27
+example_layout.xml: <com.example.test.CustomViewGroup attrs=4 orientation id layout_width layout_height> <TextView attrs=3 layout_width layout_height text> <com.example.test.CustomTextView attrs=4 id layout_width layout_height text> <com.example.test.CustomButton attrs=4 id layout_width layout_height text> <Button attrs=4 id layout_width layout_height text> END
+example_layout_with_onclick.xml: <com.example.test.CustomViewGroup attrs=4 orientation id layout_width layout_height> <TextView attrs=4 layout_width layout_height text onClick> <com.example.test.CustomTextView attrs=4 id layout_width layout_height text> <com.example.test.CustomButton attrs=5 id layout_width layout_height text onClick> <Button attrs=4 id layout_width layout_height text> END
+ClinitBatchingTestManifest.xml: <manifest attrs=5 compileSdkVersion compileSdkVersionCodename package platformBuildVersionCode platformBuildVersionName> <application attrs=1 name> END

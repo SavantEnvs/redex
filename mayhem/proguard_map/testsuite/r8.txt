@@ -1,0 +1,6 @@
+# compiler: R8
+# {"id":"com.android.tools.r8.mapping","version":"2.0"}
+com.example.Outer$Inner -> c:
+# {"id":"sourceFile","fileName":"Outer.java"}
+    long[][] table -> a
+    1:5:boolean check(long):12:16 -> a
