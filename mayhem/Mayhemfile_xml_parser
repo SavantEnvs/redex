@@ -1,0 +1,11 @@
+project: savantenvs/redex
+target: xml_parser
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_xml_parser
+    libfuzzer: true
+    timeout: 5
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/xml_parser/testsuite

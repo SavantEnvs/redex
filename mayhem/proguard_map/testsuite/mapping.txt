@@ -1,0 +1,9 @@
+com.example.Foo -> a:
+    int x -> a
+    java.lang.String name -> b
+    1:3:void <init>() -> <init>
+    4:10:int compute(int,java.lang.String[]) -> a
+    11:11:void com.example.Inl.helper():20:20 -> b
+com.example.Bar -> b:
+    com.example.Foo foo -> a
+    void run() -> a

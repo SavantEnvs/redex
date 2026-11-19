@@ -1,0 +1,11 @@
+project: savantenvs/redex
+target: proguard_parser
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_proguard_parser
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/proguard_parser/testsuite

@@ -1,0 +1,11 @@
+project: savantenvs/redex
+target: apk_resources
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_apk_resources
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/apk_resources/testsuite

@@ -1,0 +1,11 @@
+project: savantenvs/redex
+target: class_loader
+
+cmds:
+  - cmd: /mayhem/mayhem/build/fuzz_class_loader
+    libfuzzer: true
+    timeout: 10
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/class_loader/testsuite
